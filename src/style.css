@@ -1654,7 +1654,7 @@ img {
   max-width: 100%;
 }
 .banner {
-  background: url(img/hero-bg.jpg) 0 0 no-repeat;
+  background: url(img/paisley-lq.jpg) 0 0 no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -1688,6 +1688,7 @@ img {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   font-family: Samarkan Oblique;
+  color:#1C5F30;
 }
 .banner-lead-1 {
   -webkit-animation-delay: 0.4s;
@@ -1731,7 +1732,7 @@ img {
 .logo {
   width: 160px;
   height: 95px;
-  background: url(img/logo.svg) 50% 50% no-repeat;
+
   display: inline-block;
   float: left;
   -webkit-transition: all 0.3s;
@@ -1928,7 +1929,7 @@ img {
   animation-name: fadeInRight;
 }
 .ingredients-block {
-  background: url(img/ingredients-bg.jpg) 0 0 no-repeat;
+  background: url(img/ingredients.jpg) 0 0 no-repeat;
   background-size: cover;
 }
 .feature-image-group {
