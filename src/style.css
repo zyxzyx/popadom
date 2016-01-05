@@ -1821,6 +1821,7 @@ img {
   opacity: 0;
   max-height: 1px;
   overflow: hidden;
+
 }
 .navigation-toggle-checkbox[type=checkbox]:checked + .navigation-toggle-label + .navigation {
   opacity: 1;
@@ -2361,9 +2362,20 @@ img {
     padding: 50px 60px;
   }
   .header {
-    background: transparent;
+    background: #0A0A0A;
     opacity: .9;
     padding-bottom: 20px;
+    position: fixed;
+    z-index:9999;
+    width:100%;
+  }
+  .header-address{
+	font-size:12px;
+	text-align:center; 
+	color:#666;
+	z-index:9999;
+	position:absolute;
+	display:inline-block;
   }
   .header-inner {
     padding-left: 5px;
