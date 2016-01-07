@@ -2472,6 +2472,18 @@ img {
     left: 0;
     width: 100%;
   }
+  .nav-text{
+    
+    position: absolute;
+    left: 20px;
+    padding-top: 20px;
+    font-family: Samarkan Oblique;
+    font-size: x-large;
+
+    color: #1A5D2F;
+    display:none;
+
+  }
   .navigation-sticky{
     position: fixed;
     top:0;

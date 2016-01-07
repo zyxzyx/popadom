@@ -25,7 +25,9 @@ nm = $('#navigation-menu').height();
 $(window).scroll(function() {
     if ($(this).scrollTop() > (hdr-nm)) {
         navMenu.addClass(stickyCls);
+        $(".nav-text").show(500);
     } else {
         navMenu.removeClass(stickyCls);
+        $(".nav-text").hide();
     }
 });
