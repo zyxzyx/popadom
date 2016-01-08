@@ -23,7 +23,7 @@ stickyCls = "navigation-sticky";
 hdr = $('.header').height();
 nm = $('#navigation-menu').height();
 $(window).scroll(function() {
-    if ($(this).scrollTop() > hdr) {
+    if ($(this).scrollTop() > (hdr-nm)) {
         navMenu.addClass(stickyCls);
         if($(".navigation-toggle-label").is(":visible") != true){
             $(".nav-text").show(500);
