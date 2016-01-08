@@ -1614,6 +1614,7 @@ h2:after,
   }
 }
 @media print {
+
   .no-float-print {
     float: none;
   }
@@ -1760,6 +1761,26 @@ img {
 .logo:hover {
   opacity: .8;
 }
+.header-address a{
+  text-decoration: none;
+}
+.header-address {
+  font-size:12px;
+
+  color:#D3D3D3;
+}
+.nav-text{
+    
+    position: absolute;
+    left: 20px;
+    padding-top: 20px;
+    font-family: Samarkan Oblique;
+    font-size: x-large;
+
+    color: #1A5D2F; /*popadom green*/
+    display:none;
+
+  }
 .navigation-toggle-label {
   font-size: 16px;
   font-size: 1rem;
@@ -1843,6 +1864,7 @@ img {
   margin-top: 10px;
 }
 .navigation-menu .navigation-item > a {
+  text-align: center;
   font-family: "Garamond, Georgia, serif;";
   font-size: 18px;
   font-size: 1.125rem;
@@ -2376,8 +2398,11 @@ img {
 	color:#D3D3D3;
 	z-index:9999;
 	position:relative;
-	display:inline-block;
+	/*display:inline-block;*/
   margin-top: 20px
+  }
+  .header-address a{
+    text-decoration: none;
   }
   .header-inner {
     padding-left: 5px;
@@ -2472,24 +2497,16 @@ img {
     left: 0;
     width: 100%;
   }
-  .nav-text{
-    
-    position: absolute;
-    left: 20px;
-    padding-top: 20px;
-    font-family: Samarkan Oblique;
-    font-size: x-large;
-
-    color: #1A5D2F;
-    display:none;
-
-  }
   .navigation-sticky{
     position: fixed;
+    text-align: center;
+    width: 100%;
     top:0;
+    left: 0;
     z-index:  9999;
-    padding-bottom: 15px;
+    padding-bottom: 15px!important;
     background-color:#0A0A0A;
+
   }
   .navigation-social {
     list-style: none;

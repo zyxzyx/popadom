@@ -23,9 +23,13 @@ stickyCls = "navigation-sticky";
 hdr = $('.header').height();
 nm = $('#navigation-menu').height();
 $(window).scroll(function() {
-    if ($(this).scrollTop() > (hdr-nm)) {
+    if ($(this).scrollTop() > hdr) {
         navMenu.addClass(stickyCls);
-        $(".nav-text").show(500);
+        if($(".navigation-toggle-label").is(":visible") != true){
+            $(".nav-text").show(500);
+        }
+
+        // 
     } else {
         navMenu.removeClass(stickyCls);
         $(".nav-text").hide();
