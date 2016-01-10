@@ -1667,6 +1667,10 @@ img {
   background-position: center; 
 
 }
+.banner-lead{
+  font-size: 30px;
+  line-height: 35px;
+}
 .banner-lead:after {
   width: 270px;
   background-position: 50% 50%;
@@ -1687,6 +1691,7 @@ img {
   animation-delay: 1s;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+
 }
 .banner-lead-1,
 .banner-lead-2 {
@@ -1696,10 +1701,12 @@ img {
   animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  font-family: Samarkan Oblique;
+  font-family:"Garamond, Georgia, serif;" ;
+  /*font-family: Samarkan Oblique;*/
   color:#1C5F30;
 }
 .banner-lead-1 {
+
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
@@ -2394,7 +2401,7 @@ img {
   }
   .header-address{
 	font-size:12px;
-
+  text-align: center;
 	color:#D3D3D3;
 	z-index:9999;
 	position:relative;
@@ -2417,6 +2424,10 @@ img {
   }
   .banner {
     min-height: 550px;
+  }
+  .banner-lead {
+    font-size: 2rem;
+    line-height: 50px
   }
   .banner-inner {
     padding-left: 15px;
@@ -2446,6 +2457,10 @@ img {
     clear: none;
   }
   .navigation-menu {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    padding-bottom:15px !important;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -2498,7 +2513,7 @@ img {
     width: 100%;
   }
   .navigation-sticky{
-    position: fixed;
+    position: fixed!important;
     text-align: center;
     width: 100%;
     top:0;
@@ -2543,11 +2558,15 @@ img {
   }
   .banner-lead {
     font-size: 70px;
-    font-size: 4.375rem;
+    font-size: 4rem;
     line-height: 90px;
     line-height: 5.625rem;
   }
   .navigation-menu {
+    width: 100%;
+    position: absolute;
+    padding-bottom:15px !important;
+    left: 0px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -2580,7 +2599,7 @@ img {
 @media only screen and (min-width: 1140px) {
   .banner-lead {
     font-size: 80px;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 100px;
     line-height: 6.25rem;
   }
