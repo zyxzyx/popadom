@@ -19,19 +19,23 @@ WebFont.load({
 });
 
 var navMenu = $("#navigation-menu");
+var navText = $(".navigation-toggle-label");
+console.log(navText);
 stickyCls = "navigation-sticky";
 hdr = $('.header').height();
 nm = $('#navigation-menu').height();
 $(window).scroll(function() {
     if ($(this).scrollTop() > (hdr-nm)) {
         navMenu.addClass(stickyCls);
-        if($(".navigation-toggle-label").is(":visible") != true){
-            $(".nav-text").show(500);
-        }
+        navText.addClass(stickyCls);
+        //if($(".navigation-toggle-label").is(":visible") != true){
+        //    $(".nav-text").show(500);
+        //}
 
         // 
     } else {
         navMenu.removeClass(stickyCls);
-        $(".nav-text").hide();
+        navText.removeClass(stickyCls);
+        //$(".nav-text").hide();
     }
 });

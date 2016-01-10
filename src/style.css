@@ -1741,7 +1741,7 @@ img {
   padding-bottom: 15px;
   position: relative;
 }
-.header:after {
+/*.header:after {
   content: "";
   width: 100%;
   height: 1px;
@@ -1752,7 +1752,7 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-}
+}*/
 .logo {
   width: 160px;
   height: 95px;
@@ -1763,7 +1763,7 @@ img {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 1;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .logo:hover {
   opacity: .8;
@@ -1772,7 +1772,7 @@ img {
   text-decoration: none;
 }
 .header-address {
-  font-size:12px;
+  font-size:1rem;
 
   color:#D3D3D3;
 }
@@ -1874,7 +1874,7 @@ img {
   text-align: center;
   font-family: "Garamond, Georgia, serif;";
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   line-height: 24px;
   line-height: 1.5rem;
   margin-top: 1em;
@@ -2392,7 +2392,13 @@ img {
     padding: 50px 60px;
   }
   .header {
-    background: #0A0A0A;
+  	background: -moz-linear-gradient(269deg, rgba(10,10,10,0.8) 0%, rgba(10,10,10,0) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(10,10,10,0.8)), color-stop(100%, rgba(10,10,10,0))); /* safari4+,chrome */
+background: -webkit-linear-gradient(269deg, rgba(10,10,10,0.8) 0%, rgba(10,10,10,0) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(269deg, rgba(10,10,10,0.8) 0%, rgba(10,10,10,0) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(269deg, rgba(10,10,10,0.8) 0%, rgba(10,10,10,0) 100%); /* ie10+ */
+background: linear-gradient(181deg, rgba(10,10,10,0.8) 0%, rgba(10,10,10,0) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#0a0a0a',GradientType=0 ); /* ie6-9 */
     opacity: .9;
     padding-bottom: 20px;
     /*position: fixed;*/
@@ -2400,13 +2406,13 @@ img {
     width:100%;
   }
   .header-address{
-	font-size:12px;
+	font-size:1rem;
   text-align: center;
 	color:#D3D3D3;
 	z-index:9999;
 	position:relative;
 	/*display:inline-block;*/
-  margin-top: 20px
+  margin-top: 10px
   }
   .header-address a{
     text-decoration: none;
@@ -2465,6 +2471,7 @@ img {
     margin: 0;
     padding: 0;
     display: inline-block;
+    top:0px;
   }
   .navigation-menu li {
     margin: 0;
@@ -2478,7 +2485,7 @@ img {
   .navigation-menu .navigation-item > a {
     font-family: "Garamond, Georgia, serif;";
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 18px;
     line-height: 1.375rem;
     margin-top: 1em;
@@ -2522,6 +2529,9 @@ img {
     padding-bottom: 15px!important;
     background-color:#0A0A0A;
 
+  }
+  .navigation-sticky span{
+  	display:inline;
   }
   .navigation-social {
     list-style: none;
@@ -2571,6 +2581,7 @@ img {
     margin: 0;
     padding: 0;
     display: inline-block;
+    top:0px;
   }
   .navigation-menu li {
     margin: 0;
