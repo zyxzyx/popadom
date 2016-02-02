@@ -584,7 +584,7 @@ h2:after,
   position: relative;
 }
 .button:hover {
-  background: #D3D3D3;
+  background: #1A5D2F;
 }
 .button:active {
   top: 1px;
