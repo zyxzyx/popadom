@@ -1706,7 +1706,7 @@ img {
   color:#1C5F30;
 }
 .banner-lead-1 {
-
+  width: 45%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
@@ -2453,7 +2453,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', end
     padding: 0;
     padding-top: 45px;
   }
-  .banner-lead-1,
+  /*.banner-lead-1,*/
   .banner-lead-2 {
     display: block;
   }
