@@ -1,2 +1,0 @@
-# popadom
-popadom homepage

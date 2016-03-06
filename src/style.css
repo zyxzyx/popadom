@@ -2913,3 +2913,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', end
     content: " (" attr(title) ")";
   }
 }
+.required .control-label:after {
+    color: #dd0000;
+    content: "*";
+    margin-left: 6px;
+}
